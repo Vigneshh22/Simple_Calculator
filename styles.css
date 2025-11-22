@@ -2,19 +2,20 @@
     box-sizing: border-box;
     margin: 0;
 }
-h1{
+    h1{
     text-decoration: underline;
     font-size: 65px;
     margin-top: 50px;
     text-align: center;
-}
+    }
+
 .calculator{
     background-color:black;
     padding:15px;
     height:580px;
     max-width: 400px;
     margin: 0 auto;
-    border: solid 1px #ff0000;
+    border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 2px 5px rgba(88, 50, 50, 0.3);
     border-radius: 15px;
     margin-top: 50px;
@@ -30,13 +31,14 @@ h1{
     letter-spacing: 2px;
     height:120px;
     width: 100%;
-    padding:30px;
-    font-size: 40px;
+    padding:20px;
+    font-size: 60px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgb(255, 255, 255);
     background-color: rgb(39, 3, 3);
-    color: white; 
+    color : white;
+ 
 }
 
 .buttons{
@@ -47,13 +49,13 @@ h1{
 }
 
 button{
-    padding: 20px;
+    padding:20px;
     font-size:30px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.15s ease, background-color 0.2s; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.35);
     transition: all 0.2s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -61,7 +63,7 @@ button:hover{
     background-color:#fff;
     color: black;
     transform: scale(1.15);
-    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    box-shadow: 0 10px 18px rgba(255,255,255,0.25);
     filter: brightness(1.2);
 }
 
@@ -70,6 +72,18 @@ button:active {
     box-shadow: 0 0 12px rgba(255,147,0,0.8);
 }
 
+button:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 147, 0, 0.7);
+}
+.delete{
+    background-color:rgb(138,138,138);
+    color:white;
+}
+.delete:hover{
+    background-color: red;
+    color: black;
+}
 .clear{
     background-color:rgb(138,138,138);
     color:white;
@@ -101,6 +115,7 @@ button:active {
     background-color: #ff9300;
     grid-column: span 2;
     color: white;
+    font-size: 30px;
 }
 .equals:hover{
     background-color:rgb(122, 116, 207);
